@@ -20,11 +20,20 @@ li{
 .navbar{
     background-color:rgb(40, 38, 38) !important;
     color: white !important;
+    width: 1000px;
 }
 
 .navbar-brand{
 
 }
 .line{
+    color:white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    border: 2px solid white;
+    background-color:grey;
     color:white;
 }

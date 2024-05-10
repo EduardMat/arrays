@@ -1,0 +1,30 @@
+body{
+    color:white;
+    background-color: rgb(40, 38, 38);
+    
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aqua;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    background-color:rgb(40, 38, 38) !important;
+    color: white !important;
+}
+
+.navbar-brand{
+
+}
+.line{
+    color:white;
+}

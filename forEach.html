@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,22 +20,187 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-    <title>forEach</title>
-</head>
-<body>
-    <h1>
-forEach 
-    </h1>
-    <h2>
- The forEach() method calls a function for each element in an array.Use the for-each loop when you want to loop through all the values in an array or list. 
 
+    <link rel="stylesheet" href="style.css" />
+    <title>forEach</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img class="navbar-brand" src="./images/logo1.png" width="70" height="70" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          
+         <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Arrays ONE
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./concat.html">concat</a></li>
+              <li><a class="dropdown-item" href="./copyWithin.html">copyWithin</a></li>
+              <li><a class="dropdown-item" href="./entries.html">entries</a></li>
+              <li><a class="dropdown-item" href="./every.html">every</a></li>
+              <li><a class="dropdown-item" href="#"> </a></li>
+              <li><a class="dropdown-item" href="#"> </a></li>
+              <li><a class="dropdown-item" href="#"> </a></li>
+              <li><a class="dropdown-item" href="#"> </a></li>
+              <li><a class="dropdown-item" href="#"> </a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Arrays TWO
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./fill.html">fill</a></li>
+              <li><a class="dropdown-item" href="./filter.html">filter</a></li>
+              <li><a class="dropdown-item" href="./find.html">find</a></li>
+              <li><a class="dropdown-item" href="./findIndex.html">findIndex</a></li>
+              <li><a class="dropdown-item" href="./flat.html">flat</a></li>
+              <li><a class="dropdown-item" href="./flatMap.html">flatMap</a></li>
+              <li><a class="dropdown-item" href="./forEach.html">forEach</a></li>
+              <li><a class="dropdown-item" href="./from.html">from</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Arrays THREE
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./includes.html">includes</a></li>
+              <li><a class="dropdown-item" href="./index.html">index</a></li>
+              <li><a class="dropdown-item" href="./indexOf.html">indexOf</a></li>
+              <li><a class="dropdown-item" href="./isArray.html">isArray</a></li>
+              <li><a class="dropdown-item" href="./join.html">join</a></li>
+              <li><a class="dropdown-item" href="./keys.html">keys</a></li>
+              <li><a class="dropdown-item" href="./lastIndexOf.html">lastIndex</a></li>
+              <li><a class="dropdown-item" href="./map.html">map</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Array FOUR
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./pop.html">pop</a></li>
+              <li><a class="dropdown-item" href="./push.html">push</a></li>
+              <li><a class="dropdown-item" href="./reduce.html">reduce</a></li>
+              <li><a class="dropdown-item" href="./reduceRight.html">reduceRight</a></li>
+              <li><a class="dropdown-item" href="./reverse.html">reverse</a></li>
+              <li><a class="dropdown-item" href="./shift.html">shift</a></li>
+              <li><a class="dropdown-item" href="./slice.html">slice</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Array FIVE
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./some.html">some</a></li>
+              <li><a class="dropdown-item" href="./sort.html">sort</a></li>
+              <li><a class="dropdown-item" href="./toString.html">toString</a></li>
+              <li><a class="dropdown-item" href="./unshift.html">unshift</a></li>
+              <li><a class="dropdown-item" href="./valueOf.html">valuesOf</a></li>
+              <li><a class="dropdown-item" href="./values.html">values</a></li>
+            </ul>
+          </li>
+
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <h1>forEach</h1>
+    <h2>
+      The forEach() method calls a function for each element in an array.Use the
+      for-each loop when you want to loop through all the values in an array or
+      list.<br/>
+      See the Console or check the code on VS for more details.
     </h2>
 
+    <p class="example">Example 1:</p>
+    <p> const fruits = ["apple", "peach", "apricot"]; </p>
+    <p id="demo"> </p>
+<hr/>
 
-
-
-
+<p class="example">Example 2:</p>
+    <p> const cars = ["mercedes", " fiat", " fiesta"]; </p>
+    <p id="demoOne"> </p>
 
     
-</body>
+    <script>
+ // This is the first example:       
+      let text = " ";
+const fruits = ["apple", "orange", "cherry"];
+fruits.forEach(myFunction);
+
+document.getElementById("demo").innerHTML = text;
+ 
+function myFunction(item, index) {
+  text += index + ": " + item + "<br>"; 
+}
+
+//This is the second example:
+let texts = "this is my ";
+const cars = ["mercedes", " fiat", " fiesta", "BMW"];
+cars.forEach(myCars);
+
+document.getElementById("demoOne").innerHTML = texts;
+
+function myCars(item, index){
+    texts +=  item + "<br>"; 
+}
+
+    
+    </script>
+
+    
+  </body>
 </html>
